@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Republic Day & Independence Day Celebration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #FF9933, #FFFFFF, #138808); /* Saffron, White, and Green Gradient */
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #333;
+            position: relative;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #fff; /* White text color */
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .ceo-appreciation {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .ceo-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #138808; /* Green text color */
+        }
+
+        .ceo-photo {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        .independence-day-info {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight {
+            color: #138808; /* Green text color */
+        }
+
+        .indian-flag-static {
+            max-width: 150px;
+            height: auto;
+            position: absolute;
+            top: 10px; /* Adjust top position as needed */
+            right: 10px; /* Adjust right position as needed */
+        }
+
+        .date-time {
+            margin-top: 30px;
+            font-size: 20px;
+            color: #fff; /* White text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Republic Day & Independence Day!</h1>
+        <p>Let's celebrate the spirit of unity and diversity.</p>
+
+        <div class="ceo-appreciation">
+            <div>
+                <div class="ceo-name">Dr. Sindhura Narayana</div>
+                <img class="ceo-photo" src="https://s3.ap-south-1.amazonaws.com/file.narayanaschools-new/399X499%2001-1697284339-1426218100.png" alt="Dr. Sindhura Narayana">
+            </div>
+            <div>
+                <div class="ceo-name">Sharani Narayana</div>
+                <img class="ceo-photo" src="https://s3.ap-south-1.amazonaws.com/file.narayanaschools-new/399X499%2004-1697284412-1676518591.png" alt="Sharani Narayana">
+            </div>
+        </div>
+
+        <div class="independence-day-info">
+            <p>As we celebrate Republic Day, let's also look forward to the upcoming Independence Day. </p>
+            <p>This year's Independence Day holds special significance, marked by Narayana School CEO.</p>
+            <p>Let's come together and commemorate the spirit of freedom and progress.</p>
+            <p class="joyous-message"><strong>Wishing you a joyous Independence Day!</strong></p>
+            <p>Narayana School, Manikonda Branch, 9th Class</p>
+        </div>
+
+        <img class="indian-flag-static" src="https://68.media.tumblr.com/69a5b8dc5ad6608fb89f46fd8644ccb7/tumblr_nloh6sS4gN1ryhuh7o1_500.gif" alt="Indian Flag">
+
+        <div class="date-time" id="datetime"></div>
+
+        <script>
+            function updateDateTime() {
+                var now = new Date();
+                var date = now.toDateString();
+                var time = now.toLocaleTimeString();
+                document.getElementById('datetime').innerHTML = 'Current Date and Time: ' + date + ' ' + time;
+            }
+
+            setInterval(updateDateTime, 1000);
+            updateDateTime(); // Initial call to display date and time
+        </script>
+    </div>
+</body>
+</html>
